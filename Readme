@@ -2,7 +2,7 @@ Opti Windows 10
 
 
 
-ASTUCE :
+ASTUCE DRIVE :
 
 1) Se rendre dans le panneau de configuration puis dans système et sécurité ensuite dans système et enfin dans paramètres système avancés.
 2) Cliquer sur le premier bouton "paramètres" puis aller dans l'onglet avancé et vérifier que "les programmes" sont bien coché et non "les services en arrière-plan". Cliquer sur définir.
@@ -21,4 +21,13 @@ car le système va bosser et en plus fragmenter le fichier d'échange pendant qu
 qui réduira vos crashs ainsi qu'améliora vos performances et qui ne fragmentera plus beaucoup le fichier d'échange.
 Une simple défragmentation ne suffit pas a le défragmenter.
 Il faut carrément cochet aucun fichier d'échange et redémarrer pour le mettre à zéro puis refaire la manip.
+
+ASTUCE ALIM WIN10 : 
+
+Cliquez sur Démarrer ou appuyez sur la touche Windows du clavier, tapez alimentation et cliquez sur Options d’alimentation, dans la partie supérieure du menu Démarrer.
+La boîte de dialogue Options d’alimentation s’affiche. Cliquez sur Afficher mes modes supplémentaires dans la partie inférieure droite de la boîte de dialogue pour révéler un réglage caché par défaut :
+Sélectionnez l’option Performances élevées.
+Vous pouvez fermer la boîte de dialogue Options d’alimentation pour utiliser les options par défaut ou cliquer sur Modifier les paramètres du mode pour modifier individuellement les différents paramètres d’économie d’énergie.
+Si vous choisissez de modifier les paramètres manuellement, cliquez sur Modifier les paramètres d’alimentation avancés et indiquez comment doivent se comporter les différents éléments matériels de votre ordinateur :
+Par exemple, vous pourriez décider de ne jamais arrêter le disque dur ou encore de ne jamais passer en mode Veille pour gagner en performances.
 
