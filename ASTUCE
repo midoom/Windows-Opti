@@ -1,0 +1,18 @@
+1) Se rendre dans le panneau de configuration puis dans système et sécurité ensuite dans système et enfin dans paramètres système avancés.
+2) Cliquer sur le premier bouton "paramètres" puis aller dans l'onglet avancé et vérifier que "les programmes" sont bien coché et non "les services en arrière-plan". Cliquer sur définir.
+3) Décochez (si ce n'est déja fait) gestion automatique des fichiers d'échange.
+4) Sélectionner le lecteur qui contient vos jeux (vous pouvez le faire avec votre lecteur qui contient vos autres programmes qui sont gourmands en ressources comme photoshop ou première pro ou pour les développeurs Unreal Engine ou Unity).
+5) Cliquez sur taille gérée par le système et définir.
+6) Faire ok et redémarrer quand il vous le propose.
+7) Vous devez retourner au même endroit qu'avant le redémarrage et au lieu de cocher taille gérer par le système, cochez cette fois-ci taille personnalisée.
+8) Rentrez la même valeur qui est inscrite en bas de la page dans les deux cases : taille allouée actuellement et non la recommandée.
+9) Faire ok appliquer et redémarrer quand ils vous le proposent.
+10) Vos crashs devraient totalement disparaître ou être réduits considérablement !
+11) Vous devrez refaire cette manipulation quand vous changerez de barrettes de RAM.
+
+Pour les curieux qui veulent savoir pourquoi nous n'avons pas laissé la valeur taille gérée par le système :
+car le système va bosser et en plus fragmenter le fichier d'échange pendant que vous jouez, autant mettre une valeur stable et fixe,
+qui réduira vos crashs ainsi qu'améliora vos performances et qui ne fragmentera plus beaucoup le fichier d'échange.
+Une simple défragmentation ne suffit pas a le défragmenter.
+Il faut carrément cochet aucun fichier d'échange et redémarrer pour le mettre à zéro puis refaire la manip.
+
