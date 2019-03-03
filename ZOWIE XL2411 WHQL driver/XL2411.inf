@@ -1,0 +1,124 @@
+; ------------------------------------------------
+; Copyright (c) 2016 BenQ Corporation
+; Issue date -- 03/22/2016
+; revision 1
+; This is a setupfile for XL2411
+; ------------------------------------------------
+;
+
+[Version]
+signature="$CHICAGO$"
+Class=Monitor
+ClassGuid={4D36E96E-E325-11CE-BFC1-08002BE10318}
+Provider=%BenQ%
+CatalogFile=XL2411.cat
+DriverVer=03/22/2016,1.0
+
+[SourceDisksNames]
+1=%DiskName%,,,
+
+[SourceDisksFiles]
+XL2411.icm=1
+
+[DestinationDirs]
+DefaultDestDir  = 12
+XL2411_Analog.copyfiles = 23
+XL2411_Digital.copyfiles = 23
+XL2411_HDMI.copyfiles = 23
+
+[ControlFlags]
+ExcludeFromSelect.NT=Monitor\BNQ7F30
+ExcludeFromSelect.NT=Monitor\BNQ7F31
+ExcludeFromSelect.NT=Monitor\BNQ7F32
+
+
+[Manufacturer]
+%BenQ%=BenQ,NTx86,NTAMD64
+
+[BenQ]
+%XL2411_Analog%=XL2411_Analog.Install, Monitor\BNQ7F30
+%XL2411_Digital%=XL2411_Digital.Install, Monitor\BNQ7F31
+%XL2411_HDMI%=XL2411_HDMI.Install, Monitor\BNQ7F32
+
+[BenQ.NTx86]
+%XL2411_Analog%=XL2411_Analog.Install, Monitor\BNQ7F30
+%XL2411_Digital%=XL2411_Digital.Install, Monitor\BNQ7F31
+%XL2411_HDMI%=XL2411_HDMI.Install, Monitor\BNQ7F32
+
+[BenQ.NTAMD64]
+%XL2411_Analog%=XL2411_Analog.Install, Monitor\BNQ7F30
+%XL2411_Digital%=XL2411_Digital.Install, Monitor\BNQ7F31
+%XL2411_HDMI%=XL2411_HDMI.Install, Monitor\BNQ7F32
+
+[Monitor_Service.Install]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\monitor.sys
+
+[XL2411_Analog.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=XL2411_Analog.AddReg, 1920, DPMS
+CopyFiles=XL2411_Analog.CopyFiles
+
+[XL2411_Digital.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=XL2411_Digital.AddReg, 1920, DPMS
+CopyFiles=XL2411_Digital.CopyFiles
+
+[XL2411_HDMI.Install]
+DelReg=DEL_CURRENT_REG
+AddReg=XL2411_HDMI.AddReg, 1920, DPMS
+CopyFiles=XL2411_HDMI.CopyFiles
+
+
+[XL2411_Analog.Install.Services]
+AddService=monitor, %SPSVCINST_ASSOCSERVICE%, Monitor_Service.Install
+
+[XL2411_Digital.Install.Services]
+AddService=monitor, %SPSVCINST_ASSOCSERVICE%, Monitor_Service.Install
+
+[XL2411_HDMI.Install.Services]
+AddService=monitor, %SPSVCINST_ASSOCSERVICE%, Monitor_Service.Install
+
+[DEL_CURRENT_REG]
+HKR,MODES
+HKR,,MaxResolution
+HKR,,DPMS
+HKR,,ICMProfile
+
+[1920]
+HKR,,MaxResolution,,"1920,1080"
+
+[DPMS]
+HKR,,DPMS,,1
+
+[XL2411_Analog.AddReg]
+HKR,"MODES\1920,1080",Mode1,,"15.0-135.0,24.0-120.0,+,+"
+HKR,,ICMProfile,0,"XL2411.icm"
+
+[XL2411_Digital.AddReg]
+HKR,"MODES\1920,1080",Mode1,,"30.0-160.0,56.0-144.0,+,+"
+HKR,,ICMProfile,0,"XL2411.icm"
+
+[XL2411_HDMI.AddReg]
+HKR,"MODES\1920,1080",Mode1,,"15.0-135.0,24.0-120.0,+,+"
+HKR,,ICMProfile,0,"XL2411.icm"
+
+[XL2411_Analog.CopyFiles]
+XL2411.icm
+
+[XL2411_Digital.CopyFiles]
+XL2411.icm
+
+[XL2411_HDMI.CopyFiles]
+XL2411.icm
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+
+BenQ="BenQ"
+DiskName="BenQ Monitor installation disk"
+XL2411_Analog="ZOWIE XL LCD (Analog)"
+XL2411_Digital="ZOWIE XL LCD (Digital)"
+XL2411_HDMI="ZOWIE XL LCD (HDMI)"
