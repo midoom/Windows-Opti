@@ -1,5 +1,49 @@
 Opti Windows 10
-
+copy of the register in the C: /RegBackup/Backup.reg
+Disable UAC
+Disable Windows 10 to restore itself from the Windows Update
+Customize privacy
+Tweaks registry
+Disable unwanted group policies
+Remove telemetry data collection disables Cortana
+Disconnect and remove the service
+Disable and remove internet search bing and indices
+Disable unnecessary task scheduler
+Block unwanted Web sites to the hosts file
+Delete Demo content
+Disable unwanted features
+Remove OneDrive and other applications
+Remove 3D objects
+Remove CameraRollLibrary
+Remove from the menu MyComputer Music, Pictures, Videos, Documents, Downloads, Desktop
+Rename the computer
+Set automatic logon
+Remove wallpaper on the login screen
+Show a Computer shortcut on your desktop
+Underline keyboard shortcuts and access keys
+Set Windows Explorer to start
+Hide search window from the taskbar
+Disable XAML lists of applications in the Start menu
+Show file extensions
+Show hidden extension
+Use the Photo Viewer, to open the photo files
+Turn off Sticky Keys by pressing SHIFT 5 times
+Disable Filter Keys when SHIFT is pressed for 8 seconds
+Change the hour and date format 24 hours, the metric system
+Google - Search Default
+Upgrading Windows - only receive directly from Microsoft
+AutoUpdate Windows - ask to download and install (you can disable the automatic update)
+Disable shared resources Wi-Fi network
+Open to the current folder in the left pane in Windows Explorer
+Prevent the creation of shortcuts in the Recent folder
+Remove Previous Versions tab that appears when you right-click the file> Properties
+Delay pop-up taskbar - 10 seconds
+Disable Notification Center
+Runs in the form of a cleaning operation, recovery and reset the database - all installed Windows updates are permanent and can not be removed
+Clear temporary files
+Clear autostart registry
+Clear the Startup folder
+Reloading
 
 
 ASTUCE DRIVE :
