@@ -1,5 +1,7 @@
 Opti Windows 10
 
+Win10optimizer.bat : 
+
 copy of the register in the C: /RegBackup/Backup.reg
 Disable UAC
 Disable Windows 10 to restore itself from the Windows Update
